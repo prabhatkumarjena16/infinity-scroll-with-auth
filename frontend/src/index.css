@@ -20,3 +20,7 @@ body {
   letter-spacing: 0;
   padding: 1rem;
 }
+
+.infinite-scroll-component {
+  overflow: hidden !important;
+}
