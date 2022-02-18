@@ -1,5 +1,7 @@
+import HomePage from "./screens/HomePage/HomePage";
+
 function App() {
-  return <div>Hello</div>;
+  return <HomePage />;
 }
 
 export default App;
