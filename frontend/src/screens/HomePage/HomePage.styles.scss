@@ -82,16 +82,9 @@ img {
   }
 }
 
-// .infinite-scroll-component__outerdiv {
-//   width: 100%;
-// }
-
-// .infinite-scroll-component {
-//   height: auto;
-//   overflow: auto;
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.infinite-scroll-component__outerdiv {
+  background: #e7f4fa;
+}
 
 @media (min-width: 40rem) {
   .cards_item {

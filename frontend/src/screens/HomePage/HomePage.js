@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 import { useSelector, useDispatch } from "react-redux";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Message from "../../components/Message";
@@ -6,18 +7,24 @@ import Loader from "../../components/Loader";
 import "./HomePage.styles.scss";
 import { listUsers } from "../../actions/userActions";
 
-function HomePage() {
+function HomePage({ history }) {
   const [pageId, setPageId] = useState(1);
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
 
   const dispatch = useDispatch();
 
   const usersList = useSelector((state) => state.userList);
   const { loading, users, error } = usersList;
-  console.log("users", users);
 
   useEffect(() => {
-    loadUser();
-  }, []);
+    if (userInfo) {
+      loadUser();
+    } else {
+      history.push("/login");
+    }
+  }, [userInfo]);
 
   const loadUser = () => {
     setPageId(1);
@@ -41,7 +48,7 @@ function HomePage() {
         >
           <ul className="cards">
             {users.map((user) => (
-              <li key={user.id} className="cards_item">
+              <li key={uuidv4()} className="cards_item">
                 <div className="card">
                   <div className="card_image">
                     <img src={user.avatar} />

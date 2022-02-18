@@ -19,8 +19,18 @@ body {
   font-weight: 400;
   letter-spacing: 0;
   padding: 1rem;
+  background: #e7f4fa;
 }
 
 .infinite-scroll-component {
   overflow: hidden !important;
+}
+
+.main {
+  height: 87vh;
+  background: #e7f4fa;
+}
+
+#root {
+  background: #e7f4fa;
 }
