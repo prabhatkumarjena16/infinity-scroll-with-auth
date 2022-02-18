@@ -1,0 +1,11 @@
+{
+  "name": "infinity-scroll-with-auth",
+  "version": "1.0.0",
+  "description": "A infinity scroll post app in react and node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
