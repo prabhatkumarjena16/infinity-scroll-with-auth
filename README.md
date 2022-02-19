@@ -5,10 +5,6 @@ A simple infinity scroll app with authentication
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/prabhatkumarjena16/infinity-scroll-with-auth">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
 <h3 align="center">Infinity Scroll With Auth</h3>
 
   <p align="center">
@@ -18,11 +14,6 @@ A simple infinity scroll app with authentication
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
