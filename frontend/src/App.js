@@ -1,20 +1,20 @@
-import { useEffect } from "react";
-import HomePage from "./screens/HomePage/HomePage";
-import LoginScreen from "./screens/Login/LoginScreen";
+import HomePage from "./screens/HomePage";
+import LoginScreen from "./screens/Login";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Container } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
 import Header from "./components/Header";
-import { useHistory } from "react-router-dom";
+import withError from "./hooks/withError";
 
-function App({ history }) {
+function App() {
+  // Error handling
+  const HomeScreen = withError(HomePage);
+  const Login = withError(LoginScreen);
+
   return (
     <Router>
       <Header />
       <div className="main py-3">
-        <Route path="/home" component={HomePage} />
-        <Route exact path="/login" component={LoginScreen} />
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/home" component={HomeScreen} />
+        <Route exact exact path="/login" component={Login} />
       </div>
     </Router>
   );

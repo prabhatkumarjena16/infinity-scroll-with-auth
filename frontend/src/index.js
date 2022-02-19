@@ -5,11 +5,18 @@ import "./index.css";
 import App from "./App";
 import store from "./store";
 import "./bootstrap.min.css";
+import ErrorPage from "./components/ErrorPage";
 import reportWebVitals from "./reportWebVitals";
+import { ErrorBoundary } from "react-error-boundary";
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <ErrorBoundary
+      FallbackComponent={ErrorPage}
+      onError={() => console.log("Hello")}
+    >
+      <App />
+    </ErrorBoundary>
   </Provider>,
   document.getElementById("root")
 );

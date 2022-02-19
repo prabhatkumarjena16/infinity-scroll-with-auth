@@ -16,7 +16,7 @@ function HomePage({ history }) {
   const dispatch = useDispatch();
 
   const usersList = useSelector((state) => state.userList);
-  const { loading, users, error } = usersList;
+  const { users, error } = usersList;
 
   useEffect(() => {
     if (userInfo) {
@@ -24,7 +24,7 @@ function HomePage({ history }) {
     } else {
       history.push("/login");
     }
-  }, [userInfo]);
+  }, [userInfo, history]);
 
   const loadUser = () => {
     setPageId(1);
@@ -51,7 +51,7 @@ function HomePage({ history }) {
               <li key={uuidv4()} className="cards_item">
                 <div className="card">
                   <div className="card_image">
-                    <img src={user.avatar} />
+                    <img src={user.avatar} alt={user.first_name} />
                   </div>
                   <div className="card_content">
                     <h2 className="card_title">{`${user.first_name} ${user.last_name}`}</h2>

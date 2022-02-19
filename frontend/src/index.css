@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   letter-spacing: 0;
   padding: 1rem;
-  background: #e7f4fa;
+  background-color: #ecf9ff;
 }
 
 .infinite-scroll-component {
@@ -33,4 +33,11 @@ body {
 
 #root {
   background: #e7f4fa;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    flex-wrap: nowrap !important;
+    flex-direction: column !important;
+  }
 }
