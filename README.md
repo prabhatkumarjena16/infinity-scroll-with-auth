@@ -33,10 +33,9 @@ below are the instruction to Navigate the applciation
 
 <!-- CONTRIBUTING -->
 ## Steps to use the App
-1. Used with React, Node, MongoDB, React Bootsrap, SASS
-2. Navigate to https://infinity-scroll-with-auth.herokuapp.com/login and use email: john@example.com' and password: 123456 to login
+1. Technologu used is React, Node, MongoDB, React Bootsrap, SASS
+2. Navigate to [https://infinity-scroll-with-auth.herokuapp.com/login](https://infinity-scroll-with-auth.herokuapp.com/login) and use email: (`john@example.com`) and password: (`123456`) to login
 3. JWT is added for authentication and MongoDB used for storing users Data
-4. Infinity scrooll is added to the https://infinity-scroll-with-auth.herokuapp.com/home to view the infinite scroll
-5. Logout button is used to exit 
-
+4. Infinity scrooll is added to the [https://infinity-scroll-with-auth.herokuapp.com/home](https://infinity-scroll-with-auth.herokuapp.com/home) to view the infinite scroll
+5. Logout button is sign out  deom app
 <p align="right">(<a href="#top">back to top</a>)</p>
