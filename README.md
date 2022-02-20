@@ -28,6 +28,7 @@ A simple infinity scroll app with authentication
 
 <!-- GETTING STARTED -->
 ## Getting Started
+used (https://reqres.in/api/users?page=1) for fake API response for user data, which only gives 6 data at a time so made logic according to that.
 
 below are the instruction to Navigate the applciation
 
